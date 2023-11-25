@@ -1,0 +1,52 @@
+Pesquisar sobre criação de Medidas   18/11/2023.
+AVERAGE, SUM, MAX, FILTER.
+
+O QUE É?
+AVERAGE
+Resumo. A Função MÉDIA (Average) devolve a média aritmética (simples) dos argumentos. Soma todos os valores e divide pelo número total de argumentos. Na prática, o que esta Função faz é a SOMA de todos os valores a dividir pelo CONTAR desses mesmos valores.
+
+Por exemplo, se o intervalo A1:A20 contiver números, a fórmula =MÉDIA(A1:A20) retornará a média desses números. Núm1 - O primeiro número, referência de célula ou intervalo para o qual você deseja a média.
+
+Retorna a MÉDIA ARITMÉTICA de um conjunto de valores numéricos. Sintaxe: =MÉDIA (Célula Inicial: Célula Final)
+
+GROUPBY (<table> [, <groupBy_columnName> [, <groupBy_columnName> [, …]]] [, <name>, <expression> [, <name>, <expression> [, …]]])
+
+
+SUM
+A função SUM adiciona valores. É possível adicionar valores individuais, referências de célula ou intervalos, ou uma mistura dos três. Por exemplo: =SOMA(A2:A10) Adiciona os valores nas células A2:10.
+
+A função SUM retorna a soma dos valores de entrada da coluna ou expressão. A função SUM funciona com valores numéricos e ignora valores NULL
+
+SUM(<column>)
+
+
+MAX
+A função MAX calcula o maior valor de uma determinada coluna. Parece simples, mas sempre que falamos em DAX precisamos ficar atentos ao que a função faz e não ao que ACHAMOS que ela faz. No exemplo a seguir vamos calcular a maior receita de nossa base de dados
+
+Retorna o valor máximo de um conjunto de valores.
+MAX(<expression1>, <expression2>)
+
+
+FILTER
+Use a função quando quiser filtrar uma tabela ou expressão com base em uma condição específica. Geralmente, combina-se a função FILTER com outras fórmulas para criar cálculos mais complexos e personalizados. Dessa forma, ela permite filtrar tabelas com base em condições específicas
+
+Dentre as funções de filtro, temos a função FILTER do Power BI, que tem como intuito facilitar a filtragem sob condições específicas. É muito útil em casos de filtragens mais complexas, que envolvem expressões aninhadas e associadas
+FILTER ( <Table>, <FilterExpression> )
+
+FILTER(<table>,<filter>)
+
+
+
+OBJETIVO?
+
+
+
+
+SINTAXE?
+
+
+
+
+
+
+

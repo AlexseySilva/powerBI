@@ -1,0 +1,16 @@
+Pasta do professor - Cardim - Power BI (Exercício Varios)
+Utilize o arquivo do Excel chamado "Combustíveis" para importar no Power BI
+
+Monte as visualizações para:
+- Total de postos pesquisados por ano     ok
+- Total de postos pesquisados por região  ok
+- Preço médio do etanol por ano  fazer  ok
+- Preço médio do etanol por região ok
+- Preço médio do etanol por estado ok
+- Preço médio da gasolina comum por ano -------
+- Preço médio da gasolina comum por região---------
+- Preço médio da gasolina comum por estado----------
+- Qual região tem o valor mais alto da gasolina comum --------
+- Qual estado tem o valor mais alto da gasolina comum-------------
+- Qual região tem o valor mais alto do gás GLP
+- Adicionar filtro no relatório para possibilitar a seleção entre qualquer data

@@ -1,0 +1,47 @@
+USE ePet;
+
+CREATE TABLE Pais_de_pet (
+Nome varchar(50),
+Codigo_pais int PRIMARY KEY,
+CPF int,
+Telefone int
+);
+
+CREATE TABLE Animal (
+Codigo_Animal int PRIMARY KEY,
+Raca varchar(30),
+T_Sanguinio varchar(15),
+Codigo_pais int,
+Numero_ID int
+);
+
+CREATE TABLE Autoridade_Responsavel (
+Especialidade varchar(50),
+Telefone int,
+Numero_ID int PRIMARY KEY,
+Nome varchar(30),
+Endereco varchar(30)
+);
+
+CREATE TABLE Ocorrencia (
+Cod_Ocorrencia int PRIMARY KEY,
+Data_hora varchar(15),
+Descricao varchar(50),
+Lugar varchar(30),
+CPF int,
+Numero_ID int,
+FOREIGN KEY(Numero_ID) REFERENCES Autoridade_Responsavel (Numero_ID)
+);
+
+CREATE TABLE Usuario (
+Nome varchar(30),
+Email varchar(30),
+telefone int,
+Endereco varchar(50),
+CPF int PRIMARY KEY,
+Tipo_Usuario varchar(30)
+);
+
+ALTER TABLE Animal ADD FOREIGN KEY(Codigo_pais) REFERENCES Pais_de_pet (Codigo_pais);
+ALTER TABLE Animal ADD FOREIGN KEY(Numero_ID) REFERENCES Autoridade_Responsavel (Numero_ID);
+ALTER TABLE Ocorrencia ADD FOREIGN KEY(CPF) REFERENCES Usuario (CPF);
